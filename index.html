@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Local Weather App</title>
+    <link href="css/bootstrap-3.3.7/css/bootstrap-theme.css.map" type="text/css" rel="stylesheet">    
+    <link href="css/bootstrap-3.3.7/css/bootstrap-theme.min.css.map" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.7/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.7/css/bootstrap-theme.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.7/css/bootstrap.css.map" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.7/css/bootstrap.min.css.map" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.7/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="css/myStyle.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+  </head>
+  
+  <body>
+    <div class="container">
+      <h2>Showing the local weather,<br> based on your current location:</h2>
+      <div class="weather-box">
+        <p id="currPos">Your current position is:</p>
+        <div id="locality"></div>
+        <div id="latitude"></div>
+        <div id="longitude"></div>
+        <div id="moreOrLess"></div>
+        <div id="weather"></div> <!-- currently not in use -->
+      </div>
+      <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a>
+    </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="css/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+  <script src="css/bootstrap-3.3.7/js/bootstrap.js"></script>  
+  <script src="js/geoLocation.js"></script>
+  </body>
+  
+</html>

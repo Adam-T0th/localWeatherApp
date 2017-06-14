@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+}
+
+h2 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  line-height: 1.5;
+}
+
+p {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  padding: 3%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#currPos {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+#about-me {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4em;
+  float: right;  
+}
+
+body {
+  background-image: url("../img/windmill.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1a3156;
+}
+
+.container {
+  text-align: center;
+  height: 100%;
+}
+
+.weather-box {
+  height: auto;
+  width: 400px;
+  border-radius: 20px;
+  background-color: #5276af;
+  margin: auto;
+}
+
+
+
+
