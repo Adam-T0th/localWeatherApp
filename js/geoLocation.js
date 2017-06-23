@@ -26,23 +26,26 @@ $(document).ready(function(){
   }, "jsonp");
 });  
   
-  /*
-    testing the API with static parameters
-    
-    API Key : 2ada2a6efa4d7c2713fd4b278f55b8c6
-    Latitude : 51.5437594
-    Longitude: -0.19708330000000002
-  
-    https://api.darksky.net/forecast/2ada2a6efa4d7c2713fd4b278f55b8c6/51.5437594,-0.19708330000000002
-  */
 
 //obtain the DS API JSON 
 $.getJSON("https://api.darksky.net/forecast/2ada2a6efa4d7c2713fd4b278f55b8c6/51.5437594,-0.19708330000000002", function getDSAPI(DS_API_JSON) {
   return DS_API_JSON;
 });
 
+/************* implementing CORS (Cross-Origin Resource Sharing)*****************/
+xhr.onload = function() {
+ var responseText = xhr.responseText;
+ console.log(responseText);
+ // process the response.
+};
 
-/************** CORS request (cross-origin resource sharing) ****************/
+xhr.onerror = function() {
+  console.log('There was an error!');
+};
+
+xhr.withCredentials = true;
+xhr.send();
+
 // Create the XHR object.
 function createCORSRequest(method, url) {
   var xhr = new XMLHttpRequest();
@@ -90,5 +93,5 @@ function makeCorsRequest() {
   xhr.send();
 }
 
-// source: https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
+
 
