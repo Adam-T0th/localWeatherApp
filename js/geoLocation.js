@@ -47,7 +47,6 @@ xhr.onerror = function() {
 xhr.withCredentials = true;
 xhr.send();
 
-<<<<<<< HEAD
 // Create the XHR object.
 function createCORSRequest(method, url) {
   var xhr = new XMLHttpRequest();
@@ -96,6 +95,3 @@ function makeCorsRequest() {
 }
 
 
-
-=======
->>>>>>> 6f443ebc08ccb2d9687cbb076679ca470f57ef0a
