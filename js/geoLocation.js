@@ -25,7 +25,10 @@ $(document).ready(function(){
       document.getElementById("locality").innerHTML = "<p>" + (response.city) + "</p>";
   }, "jsonp");
 });  
+<<<<<<< HEAD
   
+=======
+>>>>>>> 6f443ebc08ccb2d9687cbb076679ca470f57ef0a
 
 //obtain the DS API JSON 
 $.getJSON("https://api.darksky.net/forecast/2ada2a6efa4d7c2713fd4b278f55b8c6/51.5437594,-0.19708330000000002", function getDSAPI(DS_API_JSON) {
@@ -47,6 +50,7 @@ xhr.onerror = function() {
 xhr.withCredentials = true;
 xhr.send();
 
+<<<<<<< HEAD
 // Create the XHR object.
 function createCORSRequest(method, url) {
   var xhr = new XMLHttpRequest();
@@ -96,3 +100,5 @@ function makeCorsRequest() {
 
 
 
+=======
+>>>>>>> 6f443ebc08ccb2d9687cbb076679ca470f57ef0a
