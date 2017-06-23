@@ -26,9 +26,4 @@ $(document).ready(function(){
   }, "jsonp");
 });  
 
-//obtain the DS API JSON 
-$.getJSON("https://api.darksky.net/forecast/2ada2a6efa4d7c2713fd4b278f55b8c6/51.5437594,-0.19708330000000002", function getDSAPI(DS_API_JSON) {
-  return DS_API_JSON;
-});
-
 
