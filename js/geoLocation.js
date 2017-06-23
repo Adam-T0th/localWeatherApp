@@ -24,3 +24,11 @@ $(document).ready(function(){
       document.getElementById("locality").innerHTML = "<p>" + (response.city) + "</p>";
   }, "jsonp");
 });
+
+//making the DS API call
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://api.darksky.net/forecast/0123456789abcdef9876543210fedcba/42.3601,-71.0589", false);
+xhr.send();
+
+console.log(xhr.status);
+console.log(xhr.statusText);
