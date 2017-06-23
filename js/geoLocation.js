@@ -33,6 +33,7 @@ $.getJSON("https://api.darksky.net/forecast/2ada2a6efa4d7c2713fd4b278f55b8c6/51.
 });
 
 /************* implementing CORS (Cross-Origin Resource Sharing)*****************/
+//template from StackOverflow
 xhr.onload = function() {
  var responseText = xhr.responseText;
  console.log(responseText);
