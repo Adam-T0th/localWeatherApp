@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 //making the DS API call
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://api.darksky.net/forecast/0123456789abcdef9876543210fedcba/42.3601,-71.0589", false);
+xhr.open("GET", "https://api.darksky.net/forecast/2ada2a6efa4d7c2713fd4b278f55b8c6/42.3601,-71.0589", false);
 xhr.send();
 
 console.log(xhr.status);
