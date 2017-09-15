@@ -25,7 +25,7 @@ $(document).ready(function(){
   }, "jsonp");
 });
 
-//making the DS API call
+//making the DS API call --- currently returning an error since the CORS isn't implemented
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://api.darksky.net/forecast/2ada2a6efa4d7c2713fd4b278f55b8c6/42.3601,-71.0589", false);
 xhr.send();
