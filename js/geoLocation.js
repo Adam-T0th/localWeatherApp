@@ -7,7 +7,7 @@ $(document).ready(function(){
     document.getElementById("longitude").innerHTML = "<p>" + (`Longitude: ${currentPos.longitude}`) + "</p>";
     document.getElementById("moreOrLess").innerHTML = "<p>" + (`More or less ${currentPos.accuracy} meters.`) + "</p>";  
     
-    $.post('https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyC9OxmAbzqqnkNGex-Q_fA0uLgFq1KhhW4',function(data) {
+    $.post('',function(data) { // insert API key as string parameter
     lat = currentPos.latitude;
     lon = currentPos.longitude;
     console.log(data);
